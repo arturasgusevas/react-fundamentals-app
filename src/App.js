@@ -1,9 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 
+const ChildrenWithTitle = ({children, title}) => {
+  return(
+    <div>
+      <h2>{title}</h2>
+      {children}  
+    </div>    
+  )
+  
+}
+
 const FirstReactComponent = () => {
   return(
     <p>I am new here</p>
+
   )
 }
 
@@ -18,6 +29,7 @@ function App() {
         you look beautiful
       </p>
       <FirstReactComponent />
+      <ChildrenWithTitle title={'I am title'} children={'I am children'} />
     </>    
   );
 }
