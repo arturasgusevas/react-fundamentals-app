@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import ChildrenWithTitle from './ChildrenWithTitle';
 import {FirstReactComponent} from './FirstReactComponent';
+import ConditionalRenderingComponent from './ConditionalRenderingComponent';
 
 function App() {
   return (
@@ -14,6 +14,9 @@ function App() {
       </p>
       <FirstReactComponent />
       <ChildrenWithTitle title={'I am title'} children={'I am children'} />
+      <ConditionalRenderingComponent isBlue={true} />
+      <br/>
+      <ConditionalRenderingComponent isBlue={false} />
     </>    
   );
 }
