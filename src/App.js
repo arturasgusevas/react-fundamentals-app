@@ -2,6 +2,7 @@ import './App.css';
 import ChildrenWithTitle from './ChildrenWithTitle';
 import {FirstReactComponent} from './FirstReactComponent';
 import ConditionalRenderingComponent from './ConditionalRenderingComponent';
+import List from './RenderingLists';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <ConditionalRenderingComponent isBlue={true} />
       <br/>
       <ConditionalRenderingComponent isBlue={false} />
+      <List />
     </>    
   );
 }
